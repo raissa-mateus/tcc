@@ -1,0 +1,183 @@
+
+/* Cores logo: 
+#ADE4EB;
+#AFCCF4;
+#FFAFE0;
+#BEA4F1;
+*/
+/*Formatação menu*/
+
+nav.menu ol {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+} 
+body {
+
+  padding: 0;
+  margin: 0;
+  background-color: #caddf8;
+
+}
+/* formatação tela login e cadastro*/
+#login {
+
+  float: right;
+
+  margin-right: 220px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100vh;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+
+  background-color: #FFAFE0;
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  width: 280px;
+
+}
+
+.cabecalho-card {
+
+  padding-bottom: 50px;
+
+  opacity: 0.8;
+
+  color: #fff;
+
+  text-align: center;
+
+}
+
+.cabecalho-card::after {
+
+  content: "";
+
+  width: 100px;
+
+  height: 1px;
+
+  background-color: #fff;
+
+  display: block;
+
+  margin-top: -17px;
+
+  margin-left: 90px;
+
+}
+
+.conteudo-card label {
+
+  color: #fff;
+
+  font-size: 12px;
+
+  opacity: 0.8;
+
+}
+
+.conteudo-card-area {
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 10px 0;
+
+}
+
+.conteudo-card-area input {
+
+  margin-top: 10px;
+
+  padding: 0 5px;
+
+  background-color: transparent;
+
+  border: none;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  outline: none;
+
+  color: #fff;
+
+}
+
+.card-rodape {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+.card-rodape .submit{
+
+  width: 100%;
+
+  height: 40px;
+
+  background-color: #a13854;
+
+  border:none;
+
+  color:#e1e1e1;
+
+  margin: 10px 0;
+
+} 
+
+.card-rodape a {
+
+  text-align: center;
+
+  font-size: 12px;
+
+  opacity: 0.8;
+
+  color: #fff;
+
+  text-decoration: none;
+
+}
+
+.logo {
+  position: relative;
+  top: 80px;
+  left: 180px;
+}
+
+.card-rodape #botao-login {
+  color: rgb(187, 0, 0);
+}
+
+.card-rodape #botao-cadastro {
+  color: rgb(243, 163, 232);
+}
+
+/* estilização botao enviar*/
+.enviar {
+  background-color: #BEA4F1;
+  height: 30px;
+  width: 280px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+}

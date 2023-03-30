@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Book Dream</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <link rel="icon" type="image/png" href="imagens/icone-book-dream.png"/>
+</head>
+<body>
+    <img class="logo" src="imagens/logo-book-dream.png" width="30%">
+    <div id="login">
+        <form class="card">
+		<!--<fieldset>-->
+	    <div class="cabecalho-card">
+            <h2>Login</h2>
+            <a href="index.html"></a>
+        </div> <!--class="cabecalho-card"-->
+
+    <div class="conteudo-card">
+        <div class="conteudo-card-area">
+   			<label for="usuario">Usuário </label> 
+        <input type="text"  id="usuario" required="required" autocomplete="off"/> 
+        </div>
+        <div class="conteudo-card-area">
+            <label for="password">Senha </label> 
+        <input type="password"  id="password" required="required" autocomplete="off"/>
+        </div>
+    </div> <!--class="conteudo-card"-->
+
+    <div class="card-rodape">
+        <input type="submit" class="enviar" onclick="window.location.href = 'index.html' " value="Enviar" />
+
+        <p class="link">
+            Ainda não tem conta?
+            <a href="cadastro.html"> Cadastre-se</a>
+        </p>
+    
+    </div> <!--class="card-rodape"-->
+    </form>
+    </div> <!--id="login"-->
+</body>
+</html>

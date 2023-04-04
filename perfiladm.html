@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/> 
-    <link rel="icon" type="image/png" href="imagens/icone-book-dream.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="imagens/icone-book-dream.png" />
     <title>Perfil Administrador - Book Dream</title>
 
 </head>
+
 <body>
     <header id="cabecalho">
     </header>
     <article id="conteudo">
-    <div>
-        <form class="cadastro-livro">
-            <>
-        </form>
-    </div>    
+        <div>
+            <form class="cadastro-livro">
+                <div class="livro-cad">
+                <div>
+                    <label for="titulo">Título </label>
+                    <input type="text" id="titulo" name="titulo" required="required" />
+                </div>
+                <div>
+                    <label for="autor">Autor</label>
+                    <input type="text" id="autor" name="autor" required="required" />
+                </div>
+                <div>
+                    <label for="Editora">Editora</label>
+                    <input type="text" id="editora" name="editora" required="required" />
+                </div>
+                <div>
+                <fieldset><label for="genero">Gênero</label> 
+                </div>
+                <div>
+                        <label for="romance">Romance</label>
+                        <input type="checkbox" id="genero" name="romance" />
+                </div>
+                        <label for="fantasia">Fantasia</label>
+                        <input type="checkbox" id="genero" name="fantasia"/>
+                        <label for="ficcientifica">Ficção Científica</label>
+                        <input type="checkbox" id="genero" name="ficcientifica"/>
+                        <label for="ficpolicial">Ficção Policial</label>
+                        <input type="checkbox" id="genero" name="ficpolicial"/>
+                        <label for="acaoeaventura">Ação e Aventura</label>
+                        <input type="checkbox" id="genero" name="acaoeaventura"/>
+                        <label for="terror">Terror</label>
+                        <input type="checkbox" id="genero" name="terror"/>
+                        <label for="infantil">Infantil</label>
+                        <input type="checkbox" id="genero" name="infantil"/>
+                        <label for="lgbtq">LGBTQ+</label>
+                        <input type="checkbox" id="genero" name="lgbtq"/>
+                        <label for="distopia">Distopia</label>
+                        <input type="checkbox" id="genero" name="distopia"/>
+                        <label for="suspense">Sunspense</label>
+                        <input type="checkbox" id="genero" name="suspense"/>
+                        <label for="youngadult">Young Adult</label>
+                        <input type="checkbox" id="genero" name="youngadult"/>
+                        <label for="newadult">New Adult</label>
+                        <input type="checkbox" id="genero" name="newadult"/>
+                        <label for="biografia">Biografia</label>
+                        <input type="checkbox" id="genero" name="biografia"/>
+                        <label for="conto">Conto</label>
+                        <input type="checkbox" id="genero" name="conto"/>
+                </div> </fieldset> 
+                </div> <!-- class="livro-cad"-->
+            </form>
+        </div>
 
-    
     </article>
     <footer id="rodape">
 
-    </footer></body>
+    </footer>
+</body>
+
 </html>

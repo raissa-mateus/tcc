@@ -126,11 +126,10 @@ body {
 
 .cadastro-livro .livro-cad {
   
-  background-color: rgb(255, 255, 255);
+  background-color: #caddf8;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 50px;
-  padding: 0 5px;
-
+  padding: 10px 5px;
 
 }

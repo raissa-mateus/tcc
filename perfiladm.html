@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" type="image/png" href="imagens/icone-book-dream.png" />
-    <title>Perfil Administrador - Book Dream</title>
-
+    <title>Perfil Administrador - Book Dream</title>    
 </head>
-
+<!-- 
+    https://www.devmedia.com.br/criando-um-menu-vertical-dropdown-com-css-e-html/37207
+    link menu dropdown
+-->
 <body>
     <header id="cabecalho">
     </header>
@@ -22,18 +24,23 @@
                     <label for="titulo">Título </label>
                     <input type="text" id="titulo" name="titulo" required="required" />
                 </div>
+                </br>
                 <div>
                     <label for="autor">Autor</label>
                     <input type="text" id="autor" name="autor" required="required" />
                 </div>
+                </br>
                 <div>
                     <label for="Editora">Editora</label>
                     <input type="text" id="editora" name="editora" required="required" />
                 </div>
+                </br>
                 <div>
                 <label for="gender">Gênero</label> 
                 </div>
-                <div>
+                </br>
+                <div class="container .table">
+                <div >
                         <label for="romance">Romance</label>
                         <input type="checkbox" class="genero" name="romance" />
                         <label for="fantasia">Fantasia</label>
@@ -56,35 +63,44 @@
                         <input type="checkbox" class="genero" name="lgbtq"/>
                         <label for="distopia">Distopia</label>
                         <input type="checkbox" class="genero" name="distopia"/>
+                </div>
+                <div>
                         <label for="suspense">Sunspense</label>
                         <input type="checkbox" class="genero" name="suspense"/>
                         <label for="youngadult">Young Adult</label>
                         <input type="checkbox" class="genero" name="youngadult"/>
                         <label for="newadult">New Adult</label>
                         <input type="checkbox" class="genero" name="newadult"/>
+                </div>
+                <div>
                         <label for="biografia">Biografia</label>
                         <input type="checkbox" class="genero" name="biografia"/>
                         <label for="conto">Conto</label>
                         <input type="checkbox" class="genero" name="conto"/>
-                    </div>
+                </div> <!-- fim do genero-->
+                    </br>
+                </div>
                     <div>
                         <label for="idioma">Idioma</label>
                         <input type="text" id="idioma" name="idioma" required="required" />
                     </div>
+                    </br>
                     <div>
-                        <select for="classificacao">Classificação</select>
-                        <option id="livre" name="livre">Livre</option>
-                        <option id="10" name="10">10 anos</option>
-                        <option id="12" name="12">12 anos</option>
-                        <option id="14" name="14">14 anos</option>
-                        <option id="16" name="16">16 anos</option>
-                        <option id="18" name="18">18 anos</option>
-                        
+                        <label for="classificacao">Classificação</label>
+                        <select name="classificacao" id="classificacao">Classificação
+                        <option value="livre">Livre</option>
+                        <option value="10">10 anos</option>
+                        <option value="12">12 anos</option>
+                        <option value="14">14 anos</option>
+                        <option value="16">16 anos</option>
+                        <option value="18">18 anos</option>
+                        </select>
                     </div>
                 </div> <!-- class="livro-cad"-->
+                
             </form>
-        </div>
-
+        </div> <!-- fim class="container"-->
+ 
     </article>
     <footer id="rodape">
 

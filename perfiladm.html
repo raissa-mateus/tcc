@@ -18,7 +18,8 @@
     </header>
     <article id="conteudo">
         <div>
-            <form class="cadastro-livro">
+                <fieldset> <legend id="titulo-cadlivro">Cadastro de livro</legend>
+                <form class="cadastro-livro">
                 <div class="livro-cad">
                 <div>
                     <label for="titulo">Título </label>
@@ -36,48 +37,27 @@
                 </div>
                 </br>
                 <div>
-                <label for="gender">Gênero</label> 
-                </div>
-                </br>
+
                 <div class="container .table">
-                <div >
-                        <label for="romance">Romance</label>
-                        <input type="checkbox" class="genero" name="romance" />
-                        <label for="fantasia">Fantasia</label>
-                        <input type="checkbox" class="genero" name="fantasia"/>
-                        <label for="ficcientifica">Ficção Científica</label>
-                        <input type="checkbox" class="genero" name="ficcientifica"/>
-                </div>
-                <div>
-                        <label for="ficpolicial">Ficção Policial</label>
-                        <input type="checkbox" class="genero" name="ficpolicial"/>
-                        <label for="acaoeaventura">Ação e Aventura</label>
-                        <input type="checkbox" class="genero" name="acaoeaventura"/>
-                        <label for="terror">Terror</label>
-                        <input type="checkbox" class="genero" name="terror"/>
-                </div>
-                <div>
-                        <label for="infantil">Infantil</label>
-                        <input type="checkbox" class="genero" name="infantil"/>
-                        <label for="lgbtq">LGBTQ+</label>
-                        <input type="checkbox" class="genero" name="lgbtq"/>
-                        <label for="distopia">Distopia</label>
-                        <input type="checkbox" class="genero" name="distopia"/>
-                </div>
-                <div>
-                        <label for="suspense">Sunspense</label>
-                        <input type="checkbox" class="genero" name="suspense"/>
-                        <label for="youngadult">Young Adult</label>
-                        <input type="checkbox" class="genero" name="youngadult"/>
-                        <label for="newadult">New Adult</label>
-                        <input type="checkbox" class="genero" name="newadult"/>
-                </div>
-                <div>
-                        <label for="biografia">Biografia</label>
-                        <input type="checkbox" class="genero" name="biografia"/>
-                        <label for="conto">Conto</label>
-                        <input type="checkbox" class="genero" name="conto"/>
-                </div> <!-- fim do genero-->
+                    <div>
+                        <label for="gender">Gênero</label>
+                        <select name="gender" id="gender">
+                            <option value="romance">Romance</option>
+                            <option value="fantasia">Fantasia</option>
+                            <option value="ficcientifica">Ficção Científica</option>
+                            <option value="ficpolicial">Ficção Policial</option>
+                            <option value="acaoeaventura">Ação e Aventura</option>
+                            <option value="terror">Terror</option>
+                            <option value="infantil">Infantil</option>
+                            <option value="lgbtqia">LGBTQIA+</option>
+                            <option value="distopia">Distopia</option>
+                            <option value="suspense">Suspense</option>
+                            <option value="youngadult">Young Adult</option>
+                            <option value="newadult">New Adult</option>
+                            <option value="biografia">Biografia</option>
+                            <option value="conto">Conto</option>
+                        </select>
+                    </div> <!-- FIM GENERO-->
                     </br>
                 </div>
                     <div>
@@ -96,9 +76,16 @@
                         <option value="18">18 anos</option>
                         </select>
                     </div>
+                    <label>
+                    <input type='file' accept='image/*' id='file-input' capture />
+                    <!--<script>   const fileInput = document.getElementById('file-input');    
+                    fileInput.addEventListener('change', event => appendFiles(event.target.files)); 
+                    </script> --></label>
                 </div> <!-- class="livro-cad"-->
-                
-            </form>
+            
+                </form>
+                </fieldset>
+            
         </div> <!-- fim class="container"-->
  
     </article>

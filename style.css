@@ -1,9 +1,9 @@
 
 /* Cores logo: 
-#ADE4EB;
-#AFCCF4;
-#FFAFE0;
-#BEA4F1;
+#ADE4EB; verde agua
+#AFCCF4; azul escuro claro
+#FFAFE0; rosa
+#BEA4F1; lilás
 */
 /*Formatação menu*/
 
@@ -124,12 +124,26 @@ body {
 
 /* formulario cadastro livros*/
 
-.cadastro-livro .livro-cad {
+fieldset {
   
-  background-color: #caddf8;
-  margin-left: 100px;
-  margin-right: 100px;
+  background-color: #FFAFE0; 
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 50px;
-  padding: 10px 5px;
+  padding: 30px 30px;
 
+}
+
+#titulo-cadlivro {
+  font-family:cursive;
+}
+
+input[type=text] {
+  vertical-align: middle;
+  position: relative;
+  bottom: -5px;
+}
+
+label {
+  display: block;
 }

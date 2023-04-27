@@ -141,9 +141,24 @@ fieldset {
 input[type=text] {
   vertical-align: middle;
   position: relative;
-  bottom: -5px;
+  bottom: 1px;
+  background-color: #ffdaf1;
+
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: 1px solid #000000;
+  width: 150px
+  
 }
 
+input[type=text]:hover,
+textarea:hover {
+    background: #ffffff;
+    border: 1px solid #990000;
+}
+/*
 label {
   display: block;
 }
+*/

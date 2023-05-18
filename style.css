@@ -57,7 +57,7 @@ body {
 
 .conteudo-card label {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0.8;
 }
 
@@ -117,63 +117,50 @@ body {
 .enviar {
   background-color: #BEA4F1;
   height: 30px;
-  width: 280px;
+  width: 100%;
   font-weight: bold;
   border: none;
   color: #fff;
 }
 
-/* formulario cadastro livros*/
-
-fieldset {
-  
-  background-color: #FFAFE0; 
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-  padding: 30px 30px;
-
-}
-
-#titulo-cadlivro {
-  font-family:cursive;
-}
-
-input[type=radio] {
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
-  background-color: #ffdaf1;
-}
-/*
-input[type=radio]:hover,
-textarea:hover {
-    background: #ffffff;
-    border: 10px solid #000f99;
-}*/
-
-input#titulo {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+/* estilização botao cadastrar (livro cad)*/
+.cadastrar {
+  background-color: #BEA4F1;
+  height: 30px;
+  width: 100%;
+  font-weight: bold;
   border: none;
-  width: 150px
-  
+  color: #fff;
 }
-input#autor {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: none;
-  width: 150px
-  
+
+/*  cadastro livro*/
+.idioma {
+  color: #fff;
 }
-input#editora {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: none;
-  width: 150px
+
+#cad-livro {
+  float: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 10px ;*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
 }
 
+.cont-card-area {
+  display: flex;
+  padding: 10px 0;
+}
+
+.cont-card-area input {
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: #fff;
+  /*border: none;*/
+  border: 1px solid black;
+  outline: none;
+  color: #fff;
+}
+/*fim teste cadastro livro*/

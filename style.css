@@ -17,7 +17,7 @@ nav ul.menu {
 body {
   padding: 0;
   margin: 0;
-  background-color: #caddf8;
+  background-color: #ffffff;
 }
 /* formatação tela login e cadastro*/
 #login {
@@ -125,7 +125,7 @@ body {
 
 /* estilização botao cadastrar (livro cad)*/
 .cadastrar {
-  background-color: #BEA4F1;
+  background-color: #ADE4EB;
   height: 30px;
   width: 100%;
   font-weight: bold;
@@ -133,6 +133,12 @@ body {
   color: #fff;
 }
 
+.card-livro {
+  background-color: #AFCCF4;
+  padding: 40px;
+  border-radius: 15px;
+  width: 350px;
+}
 /*  cadastro livro*/
 .idioma {
   color: #fff;

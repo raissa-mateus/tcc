@@ -134,7 +134,7 @@ body {
 }
 
 .card-livro {
-  background-color: #AFCCF4;
+  background-color: pink;
   padding: 40px;
   border-radius: 15px;
   width: 350px;
@@ -145,6 +145,7 @@ body {
 }
 
 #cad-livro {
+
   float: center;
   margin-top: 20px;
   display: flex;
@@ -170,3 +171,5 @@ body {
   color: #fff;
 }
 /*fim teste cadastro livro*/
+
+/* perfil adm js*/

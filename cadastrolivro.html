@@ -7,12 +7,12 @@
   <link rel="icon" type="image/png" href="imagens/icone-book-dream.png"/>
   <title>Cadastro de Livros</title>
   <style>
-  /*input[type=text], select {
-    width: 100%;
+    input[type=text], select {
+    width: 50%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 12px 0 0 12px;
     display: inline-block;
-    border: 1px solid #a71d1d;
+    border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
   }
@@ -28,168 +28,11 @@
 
   input[type=submit]:hover {
     background-color: #f392e6;
-  }*/
-  body {
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-}
-/* formatação tela login e cadastro*/
-#login {
-  float: right;
-  margin-right: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
-}
-
-.card {
-  background-color: #FFAFE0;
-  padding: 40px;
-  border-radius: 15px;
-  width: 350px;
-}
-
-.cabecalho-card {
-  padding-bottom: 50px;
-  opacity: 0.8;
-  color: #fff;
-  text-align: center;
-}
-
-.cabecalho-card::after {
-  content: "";
-  width: 110px;
-  height: 1px;
-  background-color: #fff;
-  display: block;
-  margin-top: -17px;
-  margin-left: 120px;
-}
-
-.conteudo-card label {
-  color: #fff;
-  font-size: 16px;
-  opacity: 0.8;
-}
-
-.conteudo-card-area {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0;
-}
-
-.conteudo-card-area input {
-  margin-top: 10px;
-  padding: 0 5px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #e1e1e1;
-  outline: none;
-  color: #fff;
-}
-
-.card-rodape {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-rodape .submit{
-  width: 100%;
-  height: 40px;
-  background-color: #BEA4F1;
-  border:none;
-  color:#e1e1e1;
-  margin: 10px 0;
-} 
-
-.card-rodape a {
-  text-align: center;
-  font-size: 12px;
-  opacity: 0.8;
-  color: #fff;
-  text-decoration: none;
-}
-
-.logo {
-  position: relative;
-  top: 80px;
-  left: 180px;
-}
-
-.card-rodape #botao-login {
-  color: rgb(187, 0, 0);
-}
-
-.card-rodape #botao-cadastro {
-  color: rgb(243, 163, 232);
-}
-
-/* estilização botao enviar*/
-.enviar {
-  background-color: #BEA4F1;
-  height: 30px;
-  width: 100%;
-  font-weight: bold;
-  border: none;
-  color: #fff;
-}
-
-/* estilização botao cadastrar (livro cad)*/
-.cadastrar {
-  background-color: #ADE4EB;
-  height: 30px;
-  width: 100%;
-  font-weight: bold;
-  border: none;
-  color: #fff;
-}
-
-.card-livro {
-  background-color: pink;
-  padding: 40px;
-  border-radius: 15px;
-  width: 350px;
-}
-/*  cadastro livro*/
-.idioma {
-  color: #fff;
-}
-
-#cad-livro {
-
-  float: center;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*height: 10px ;*/
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
-}
-
-.cont-card-area {
-  display: flex;
-  padding: 10px 0;
-}
-
-.cont-card-area input {
-  margin-top: 10px;
-  padding: 0 5px;
-  background-color: #fff;
-  /*border: none;*/
-  border: 1px solid black;
-  outline: none;
-  color: #fff;
-}
+  }
 </style>
 
 </head>
 <body>
-  <h1>Cadastro de livros</h1>
   <div id="cad-livro">
     <form action="/cadLivro" method="POST" class="card-livro">
 <!--<fieldset>-->
@@ -205,7 +48,7 @@
         </div>
         </br>
         <div class="cont-card-area">
-            <label for="autor">Autor</label>
+            <label for="autor">Autor </label>
             <input type="text" id="autor" name="autor" required="required" />
         </div>
         </br>
@@ -215,7 +58,7 @@
         </div>
         </br>
                 <div class="cont-card-area">
-                    <label for="genero">Gênero</label>
+                    <label for="genero">Gênero </label>
                     <select name="genero" id="genero">
                         <option></option>
                         <option value="romance">Romance</option>

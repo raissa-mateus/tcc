@@ -29,6 +29,49 @@
   input[type=submit]:hover {
     background-color: #f392e6;
   }
+  /*teste css cadastro livro*/
+  
+.card-livro {
+  background-color: pink;
+  padding: 40px;
+  border-radius: 15px;
+  width: 350px;
+}
+/*  cadastro livro*/
+.idioma {
+  color: #fff;
+}
+
+#cad-livro {
+
+  float: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 10px ;*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*.cont-card-area {
+  display: flex;
+  padding: 10px 0;
+}*/
+
+.idioma {
+  padding-left: 10px;
+}
+
+.cont-card-area input {
+  margin-top: 10px;
+  padding: 0 50px;
+  background-color: #fff;
+  /*border: none;*/
+  border: 1px solid black;
+  outline: none;
+  color: #000000;
+}
+/*fim teste css cadastro livro*/
 </style>
 
 </head>
@@ -100,6 +143,11 @@
                     <option value="16">16 anos</option>
                     <option value="18">18 anos</option>
                 </select>
+            </div>
+
+            <div  class="cont-card-area">
+              <label for="qtd">Quantidade</label>
+              <input type="number" id="qtd" name="qtd" value="Quantidade">
             </div>
     </div> <!--class="conteudo-card"-->
     

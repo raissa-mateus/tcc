@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
+const port = 2000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -38,6 +38,7 @@ app.post('/livros', (req, res) => {
               <th>Título</th>
               <th>Autor</th>
               <th>Editora</th>
+              <th>Quantidade</th>
             </tr>
     `;
     
@@ -47,6 +48,7 @@ app.post('/livros', (req, res) => {
           <td>${livro.titulo}</td>
           <td>${livro.autor}</td>
           <td>${livro.editora}</td>
+          <td>${livro.qtd}</td>
         </tr>
       `;
     });

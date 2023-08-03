@@ -56,6 +56,7 @@ app.get('/listagemlivros', (req, res) => {
               <th>Titulo</th>
               <th>Autor</th>
               <th>Editora</th>
+              <th>Quantidade</th>
             </tr>
     `;
     
@@ -65,6 +66,7 @@ app.get('/listagemlivros', (req, res) => {
           <td>${livro.titulo}</td>
           <td>${livro.autor}</td>
           <td>${livro.editora}</td>
+          <td>${livro.qtd}</td>
         </tr>
       `;
     });
@@ -105,7 +107,46 @@ app.post('/consultalivro', (req, res) => {
   //const titulo = req.body.titulo;
   const { titulo, autor } = req.body;
   //const autor = req.body.autor;
-  
+  connection.query(`SELECT * FROM livros WHERE autor LIKE '%${autor}%'`, (error, results, fields) => {
+    if (error) throw error;
+    
+    // Exibição dos resultados
+    let html = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Livros</title>
+        </head>
+        <body>
+          <h1>Livros encontrados</h1>
+          <table>
+            <tr>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>Editora</th>
+            </tr>
+    `;
+    
+    results.forEach((livro) => {
+      html += `
+        <tr>
+          <td>${livro.titulo}</td>
+          <td>${livro.autor}</td>
+          <td>${livro.editora}</td>
+        </tr>
+      `;
+    });
+    
+    html += `
+          </table>
+          <a href="/">Voltar</a>
+        </body>
+      </html>
+    `;
+    
+    res.send(html);
+  }); // teste que nao deu certo para a consulta
+
   // Consulta no banco de dados
   connection.query(`SELECT * FROM livros WHERE titulo LIKE '%${titulo}%'`, (error, results, fields) => {
     if (error) throw error;
@@ -153,6 +194,6 @@ connection.connect((err) => {
   console.log("Conectado ao banco de dados MySQL!");
 });
 
-app.listen(3000, () => {
-  console.log("Servidor iniciado na porta 3000");
+app.listen(2000, () => {
+  console.log("Servidor iniciado na porta 2000");
 });

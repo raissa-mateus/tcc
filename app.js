@@ -22,12 +22,12 @@ app.get("/cadLivro", (req, res) => {
 
 app.post("/cadLivro", (req, res) => {
   const  { titulo, autor, editora, genero, idioma, classificacao } = req.body;
-  if (!titulo || !autor || !editora || !genero || !idioma || !classificacao) {
+  if (!titulo || !autor || !editora || !genero || !idioma || !classificacao || !qtd) {
     res.status(400).send("Todos os campos são obrigatórios.");
     return;
   }
 
-  const livro = { titulo, autor, editora, genero, idioma, classificacao };
+  const livro = { titulo, autor, editora, genero, idioma, classificacao, qtd };
   connection.query("INSERT INTO livros SET ?", livro, (err, result) => {
     if (err) throw err;
     console.log(`Livro ${titulo} cadastrado com sucesso!`);

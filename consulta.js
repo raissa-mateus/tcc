@@ -55,7 +55,14 @@ app.post('/livros', (req, res) => {
   // Consulta no banco de dados
   connection.query(`SELECT * FROM livros WHERE titulo LIKE '%${titulo}%'`, (error, results, fields) => {
     if (error) throw error;
+
+    // consulta por autor
+    connection.query(`SELECT * FROM livros WHERE autor LIKE '%${autor}%'`, (error, results, fields) => {
+      if (error) throw error;
     
+    // consulta por editora
+    connection.query(`SELECT * FROM livros WHERE editora LIKE '%${editora}%'`, (error, results, fields) => {
+      if (error) throw error;
     // Exibição dos resultados
     let html = `
       <!DOCTYPE html>
@@ -70,6 +77,7 @@ app.post('/livros', (req, res) => {
               <th>Titulo</th>
               <th>Autor</th>
               <th>Editora</th>
+              <th>Quantidade</th>
             </tr>
     `;
     
@@ -79,6 +87,7 @@ app.post('/livros', (req, res) => {
           <td>${livro.titulo}</td>
           <td>${livro.autor}</td>
           <td>${livro.editora}</td>
+          <td>${livro.qtd}</td>
         </tr>
       `;
     });
@@ -90,6 +99,8 @@ app.post('/livros', (req, res) => {
     `;
     
     res.send(html);
+  });
+});
   });
 });
 
